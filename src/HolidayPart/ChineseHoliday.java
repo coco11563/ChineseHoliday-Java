@@ -6,19 +6,19 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * ¸üĞÂÖÁ2017Äê
+ * æ›´æ–°è‡³2017å¹´
  *
- * Èç¹û·Ç¹¼ÙÈÕ¾Í•şÅĞ”àÊÇ·ñÊÇßLÄ©
+ * å¦‚æœéç¯€å‡æ—¥å°±æœƒåˆ¤æ–·æ˜¯å¦æ˜¯é€±æœ«
  *
- * ·¨¶¨¹¼ÙÈÕ»òÕßÑa°àÒ²•ş×R„e
+ * æ³•å®šç¯€å‡æ—¥æˆ–è€…è£œç­ä¹Ÿæœƒè­˜åˆ¥
  *
- * ÉÏ°àµÄÈÕ×Ó·µ»Ø 0
+ * ä¸Šç­çš„æ—¥å­è¿”å› 0
  *
- * ²»ÓÃºÍÉÏ°àµÄ·¨¶¨¹ÈÕ·µ»Ø 1
+ * ä¸ç”¨å’Œä¸Šç­çš„æ³•å®šç¯€æ—¥è¿”å› 1
  *
- * ßLÄ©·µ»Ø 2
+ * é€±æœ«è¿”å› 2
  *
- * º¯”µ½å¿ÚÕ{ÓÃgetHoliday()
+ * å‡½æ•¸è—‰å£èª¿ç”¨getHoliday()
  */
 public class ChineseHoliday{
     private final static Map<Date, Integer> holidayBuffer = new HashMap<>();
@@ -47,8 +47,8 @@ public class ChineseHoliday{
 
     /**
      *
-     * @param d ÏëÒª«@È¡ÊÇ·ñ ‘¹¼ÙÈÕµÄÈÕÆÚ
-     * @return 0  ‘¹¤×÷ÈÕ 1  ‘¹ÈÕ 2  ‘ßLÄ©
+     * @param d æƒ³è¦ç²å–æ˜¯å¦çˆ²ç¯€å‡æ—¥çš„æ—¥æœŸ
+     * @return 0 çˆ²å·¥ä½œæ—¥ 1 çˆ²ç¯€æ—¥ 2 çˆ²é€±æœ«
      */
     public static Integer getHoliday(Date d) {
         if (holidayBuffer.containsKey(d)) {
